@@ -7,7 +7,7 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "commit": "git add . & cz"
+        "commit": "git-cz"
     },
     "dependencies": {
         "@types/node": "20.4.9",
@@ -26,13 +26,14 @@
     "devDependencies": {
         "@commitlint/cli": "^17.7.1",
         "@commitlint/config-conventional": "^17.7.0",
+        "@commitlint/cz-commitlint": "^17.7.1",
         "commitizen": "^4.3.0",
         "cz-conventional-changelog": "^3.3.0",
         "husky": "^8.0.3"
     },
     "config": {
         "commitizen": {
-            "path": "./node_modules/cz-conventional-changelog"
+            "path": "@commitlint/cz-commitlint"
         }
     }
 }
